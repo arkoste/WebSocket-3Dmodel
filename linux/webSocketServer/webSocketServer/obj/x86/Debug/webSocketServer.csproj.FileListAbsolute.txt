@@ -1,0 +1,8 @@
+D:\DOCUMENTAZIONE\docGenerali\universita\AA2011_2012\02_InformaticaMultimediale\progetto\webSocketServer\webSocketServer\obj\x86\Debug\webSocketServer.Properties.Resources.resources
+D:\DOCUMENTAZIONE\docGenerali\universita\AA2011_2012\02_InformaticaMultimediale\progetto\webSocketServer\webSocketServer\obj\x86\Debug\webSocketServer.csproj.GenerateResource.Cache
+D:\DOCUMENTAZIONE\docGenerali\universita\AA2011_2012\02_InformaticaMultimediale\progetto\webSocketServer\webSocketServer\bin\Debug\webSocketServer.exe
+D:\DOCUMENTAZIONE\docGenerali\universita\AA2011_2012\02_InformaticaMultimediale\progetto\webSocketServer\webSocketServer\bin\Debug\webSocketServer.pdb
+D:\DOCUMENTAZIONE\docGenerali\universita\AA2011_2012\02_InformaticaMultimediale\progetto\webSocketServer\webSocketServer\obj\x86\Debug\webSocketServer.exe
+D:\DOCUMENTAZIONE\docGenerali\universita\AA2011_2012\02_InformaticaMultimediale\progetto\webSocketServer\webSocketServer\obj\x86\Debug\webSocketServer.pdb
+D:\DOCUMENTAZIONE\docGenerali\universita\AA2011_2012\02_InformaticaMultimediale\progetto\webSocketServer\webSocketServer\bin\Debug\webSocketServer.exe.config
+D:\DOCUMENTAZIONE\docGenerali\universita\AA2011_2012\02_InformaticaMultimediale\progetto\webSocketServer\webSocketServer\obj\x86\Debug\webSocketServer.frmWebSocketServer.resources

@@ -17,7 +17,7 @@ The test i've made runs correctly under win 7 and ubuntu 14.04 under the conditi
 
 I haven't tested others combinations.
 
-Under Win 7
+Under Win 7 (sources code under /webSocketServer)
 
 1) Run WebSocketServer.exe
 2) From the command line type: C:\Program Files (x86)\Google\Chrome\Application\chrome.exe --allow-file-access-from-files [The complete path of the main webPage]
@@ -25,7 +25,7 @@ Under Win 7
 4) If you try to move the mouse on the Panel of the WebSocketServer application with 
    the left button pressed, you should see the movement of the 3D model. The same for the mousewheel.
 	 
-Under Ubuntu 14.04
+Under Ubuntu 14.04 (sources code under /linux)
 
 1) Run WebSocketServer.exe
 2) From the terminal, type: firefox [The complete path of the main webPage]

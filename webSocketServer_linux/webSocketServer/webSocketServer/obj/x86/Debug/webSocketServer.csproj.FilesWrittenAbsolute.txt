@@ -1,7 +1,0 @@
-/home/stefanik/Downloads/infmultiprog/webSocketServer/webSocketServer/obj/x86/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
-/home/stefanik/Downloads/infmultiprog/webSocketServer/webSocketServer/obj/x86/Debug/webSocketServer.frmWebSocketServer.resources
-/home/stefanik/Downloads/infmultiprog/webSocketServer/webSocketServer/obj/x86/Debug/webSocketServer.Properties.Resources.resources
-/home/stefanik/Downloads/infmultiprog/webSocketServer/webSocketServer/bin/Debug/webSocketServer.exe.mdb
-/home/stefanik/Downloads/infmultiprog/webSocketServer/webSocketServer/bin/Debug/webSocketServer.exe
-/home/stefanik/Downloads/infmultiprog/webSocketServer/webSocketServer/obj/x86/Debug/webSocketServer.exe
-/home/stefanik/Downloads/infmultiprog/webSocketServer/webSocketServer/obj/x86/Debug/webSocketServer.exe.mdb

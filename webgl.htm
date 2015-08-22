@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>three.js webgl - loaders - OBJ MTL loader</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			body {
+				font-family: Monospace;
+				background-color: #000;
+				color: #fff;
+				margin: 0px;
+				overflow: hidden;
+			}
+			#info {
+				color: #fff;
+				position: absolute;
+				top: 10px;
+				width: 100%;
+				text-align: center;
+				z-index: 100;
+				display:block;
+			}
+			#info a, .button { color: #f00; font-weight: bold; text-decoration: underline; cursor: pointer }
+		</style>
+	</head>
+
+	<body>
+		<div id="info">Test Venere - Frasassi
+		</div>
+
+		<script src="three.js%20webgl%20-%20loaders%20-%20OBJ%20MTL%20loader_files/three.js"></script>
+
+		<script src="three.js%20webgl%20-%20loaders%20-%20OBJ%20MTL%20loader_files/DDSLoader.js"></script>
+		<script src="three.js%20webgl%20-%20loaders%20-%20OBJ%20MTL%20loader_files/MTLLoader.js"></script>
+		<script src="three.js%20webgl%20-%20loaders%20-%20OBJ%20MTL%20loader_files/OBJMTLLoader.js"></script>
+
+		<script src="three.js%20webgl%20-%20loaders%20-%20OBJ%20MTL%20loader_files/Detector.js"></script>
+		<script src="three.js%20webgl%20-%20loaders%20-%20OBJ%20MTL%20loader_files/stats.js"></script>
+		<script src="three.js%20webgl%20-%20loaders%20-%20OBJ%20MTL%20loader_files/OrbitControls.js"></script>
+		<script src="three.js%20webgl%20-%20loaders%20-%20OBJ%20MTL%20loader_files/WebSocketCommands.js"></script>
+		<script>
+
+			var container, stats;
+
+			var camera, scene, renderer, controls;
+
+			var mouseX = 0, mouseY = 0;
+
+			var windowHalfX = window.innerWidth / 2;
+			var windowHalfY = window.innerHeight / 2;
+
+
+			init();
+			animate();
+
+
+			function init() {
+
+				container = document.createElement( 'div' );
+				document.body.appendChild( container );
+
+				camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 2000 );
+				camera.position.x = 125;
+				camera.position.y = 0;
+				camera.position.z = 125;
+				
+				controls = new THREE.OrbitControls( camera );
+				controls.damping = 0.2;
+				controls.addEventListener( 'change', render );
+
+				// scene
+
+				scene = new THREE.Scene();
+
+				var ambient = new THREE.AmbientLight( 0xffffff );
+				scene.add( ambient );
+
+				var directionalLight = new THREE.DirectionalLight( 0xffeedd );
+				directionalLight.position.set( -64,13, 49 ).normalize();
+				//scene.add( directionalLight );
+
+				// model
+
+				var onProgress = function ( xhr ) {
+					if ( xhr.lengthComputable ) {
+						var percentComplete = xhr.loaded / xhr.total * 100;
+						console.log( Math.round(percentComplete, 2) + '% downloaded' );
+					}
+				};
+
+				var onError = function ( xhr ) {
+				};
+
+
+				THREE.Loader.Handlers.add( /\.dds$/i, new THREE.DDSLoader() );
+				
+				var loader = new THREE.OBJMTLLoader();
+				loader.load( './obj/venere/75k.obj', './obj/venere/75k.mtl', function ( object ) {
+					object.scale.x = 800;
+					object.scale.y = 800;
+					object.scale.z = 800;
+					object.position.x = 46;
+					object.position.y = 0;
+					object.position.z = 295;
+					object.rotation.x = 3.141516;
+					scene.add( object );
+                    render();
+
+				}, onProgress, onError );
+
+				//
+
+				renderer = new THREE.WebGLRenderer();
+				renderer.setPixelRatio( window.devicePixelRatio );
+				renderer.setSize( window.innerWidth, window.innerHeight );
+				container.appendChild( renderer.domElement );
+
+				//document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+
+				//
+
+				window.addEventListener( 'resize', onWindowResize, false );
+
+			}
+
+			function onWindowResize() {
+
+				windowHalfX = window.innerWidth / 2;
+				windowHalfY = window.innerHeight / 2;
+
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+
+				renderer.setSize( window.innerWidth, window.innerHeight );
+
+			}
+
+			function onWindowResize() {
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+				renderer.setSize( window.innerWidth, window.innerHeight );
+				render();
+				}
+
+			function animate() {
+				requestAnimationFrame(animate);
+				controls.update();
+			}
+
+			function render() {
+				renderer.render( scene, camera );
+				//stats.update();
+			
+			}
+
+
+		</script><div><canvas style="width: 1351px; height: 738px;" height="922" width="1688"></canvas></div>
+
+	
+
+</body></html>

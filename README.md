@@ -1,4 +1,4 @@
-This project is a simple test of the interaction between a webpage showing a 3D model, and a C# WinForm 
+This project is a test of the interaction between a webpage showing a 3D model, and a C# WinForm 
 WebSocketServer application.
 I've simulated the mousemove commands on the webpage, throught a Panel placed on the WinForm application.
 

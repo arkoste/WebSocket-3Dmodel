@@ -11,6 +11,10 @@ Components i've used:
 3) WebPage with 3D model and JavaScripts that control it (dumped from 
    http://solarkiosk.altervista.org/venere/venere2.html)
 
+
+PC1
+
+
 The test i've made runs correctly under win 7 and ubuntu 14.04 under the condition below:
 
 1) To display the 3D model on win 7, i've used Chrome 44.0.2403.155 m from the command line

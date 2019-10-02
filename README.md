@@ -34,8 +34,7 @@ Under Win 7 (sources code under /webSocketServer)
 
 4) If you try to move the mouse on the Panel of the WebSocketServer application with 
    the left button pressed, you should see the movement of the 3D model. The same for the mousewheel.
-	 
-	 
+	 	 
 Under Ubuntu 14.04 (sources code under /linux)
 
 1) Run WebSocketServer.exe
@@ -43,9 +42,6 @@ Under Ubuntu 14.04 (sources code under /linux)
 2) From the terminal, type: firefox [The complete path of the main webPage]
 
 3) On the Firefox web page press CTRL+I and go to Console: you should see "connected..." message
-
-
-
 
 4) If you try to move the mouse on the Panel of the WebSocketServer application with 
    the left button pressed, you should see the movement of the 3D model. The same for the mousewheel.

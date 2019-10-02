@@ -40,9 +40,6 @@ Under Ubuntu 14.04 (sources code under /linux)
 
 3) On the Firefox web page press CTRL+I and go to Console: you should see "connected..." message
 
-
-
-
 4) If you try to move the mouse on the Panel of the WebSocketServer application with 
    the left button pressed, you should see the movement of the 3D model. The same for the mousewheel.
    

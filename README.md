@@ -20,10 +20,6 @@ The test i've made runs correctly under win 7 and ubuntu 14.04 under the conditi
 
 I haven't tested others combinations.
 
-
-PC2 PC2
-
-
 Under Win 7 (sources code under /webSocketServer)
 
 1) Run WebSocketServer.exe

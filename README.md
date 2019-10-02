@@ -12,7 +12,7 @@ Components i've used:
    http://solarkiosk.altervista.org/venere/venere2.html)
 
 
-PC1
+PC1 PC1
 
 
 The test i've made runs correctly under win 7 and ubuntu 14.04 under the condition below:
